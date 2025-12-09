@@ -1,3 +1,18 @@
+
+#NOTES ON WHILE LOOPS
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Given:
 colors = ["red", "blue", "green", "yellow", "purple"]
 
