@@ -25,25 +25,61 @@ print("The sum of the numbers from 1 to", num, "is", sum)
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
+def factorial(n):
+
+    factorial = 1
+
+    for i in range(n):
+        factorial *= i+1
+
+    return factorial
+
+print(factorial(5))
+
 # *(Example: factorial of 5 is 120)
 
 
 # ### **Problem 4: Count Vowels**
 
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
+word = input("Type in any word: ")
+
+
+
+vowels = set("aeiou")
+count = 0
+    
+for character in word:
+        if character in vowels:
+            count += 1
+            
+print(count)
+
+
 
 
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
 
+n = int(input("Pick a number: "))
 
+for x in range(0,n+1,2):
+    print(x)
 
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
 
+string = input("Enter a string: ")
 
+reversed_string = ""
+
+for char in string:
+     reversed_string = char + reversed_string
+print("Reversed String: ", reversed_string)
+
+print(reversed_string[::-1])
 
 # ### **Problem 7: Multiplication Table**
 
@@ -62,6 +98,21 @@ print("The sum of the numbers from 1 to", num, "is", sum)
 # ### **Problem 9: Fibonacci Sequence**
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
+
+# recursion means a function calls itself
+
+
+def fibonacci(n):
+     if n ==1 or n ==2:
+          return 1
+     
+     return fibonacci(n-1)+fibonacci(n-2)
+
+for i in range(1,10):
+     print(fibonacci(i))
+     
+
+
 
 
 
